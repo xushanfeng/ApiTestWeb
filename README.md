@@ -30,3 +30,8 @@ yarn install
 ![image](https://github.com/pencil1/ApiTestWeb/blob/master/picture/api_edit.png)
 
 ![image](https://github.com/pencil1/ApiTestWeb/blob/master/picture/report.png)
+
+## fix issues
+```
+1、修改testTool 路径
+```
