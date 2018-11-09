@@ -70,7 +70,7 @@
         methods: {
             buildIdentity() {
                 // 调用 callback 返回建议列表的数据
-                this.$axios.get('/apiManage/apiManage/buildIdentity', {
+                this.$axios.get('/api/buildIdentity', {
                 }).then((response) => {
                         if (response.data['status'] === 0) {
                             this.$message({
@@ -88,7 +88,7 @@
             },
             testTask() {
                 // 调用 callback 返回建议列表的数据
-                this.$axios.post('/apiManage/apiManage/task/test', {
+                this.$axios.post('/api/task/test', {
                 }).then((response) => {
                         if (response.data['status'] === 0) {
                             this.$message({
@@ -143,7 +143,7 @@
             },
             sqlData1() {
                 // 调用 callback 返回建议列表的数据
-                this.$axios.post('/apiManage/apiManage/delSql', {
+                this.$axios.post('/api/delSql', {
                 }).then((response) => {
                         if (response.data['status'] === 0) {
                             this.$message({
@@ -165,7 +165,7 @@
             },
             optimizeError() {
                 // 调用 callback 返回建议列表的数据
-                this.$axios.post('/apiManage/apiManage/optimizeError', {
+                this.$axios.post('/api/optimizeError', {
                     'errorData': this.showData,
                 }).then((response) => {
                         if (response.data['status'] === 0) {
@@ -188,7 +188,7 @@
             },
             dealSql() {
                 // 调用 callback 返回建议列表的数据
-                this.$axios.get('/apiManage/apiManage/delSql', {
+                this.$axios.get('/api/delSql', {
                 }).then((response) => {
                         if (response.data['status'] === 0) {
                             this.$message({
@@ -204,7 +204,7 @@
                 )
             },
             findApiMsg() {
-                this.$axios.post('/apiManage/apiManage/register', {
+                this.$axios.post('/api/register', {
                     'name': this.caseData.name,
                     'username': this.caseData.username,
                     'password': this.caseData.password,
